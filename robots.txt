@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alkwsh.github.io/wird-privacy/sitemap.xml
