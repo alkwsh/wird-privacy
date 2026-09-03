@@ -1,10 +1,14 @@
-# Wird Privacy & Support
+# Wird Website
 
-An independent static GitHub Pages site for Wird’s privacy policy and support
-information. The repository contains no application source code.
+The public, static GitHub Pages website for Wird. It includes the product
+landing page, privacy policy, and support information. The repository contains
+no application source code.
 
 ## Public routes
 
+- `/` — Arabic product landing page
+- `/en/` — English product landing page
+- `/id/` — Indonesian product landing page
 - `/privacy/` — Arabic privacy policy
 - `/privacy/en/` — English privacy policy
 - `/support/` — Arabic support
