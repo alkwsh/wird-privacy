@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://alkwsh.github.io/wird-privacy/sitemap.xml
+Sitemap: https://alkwsh.github.io/wird-privacy/journal-sitemap.xml

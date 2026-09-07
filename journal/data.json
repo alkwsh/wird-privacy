@@ -1,0 +1,23 @@
+{
+  "articles" : [
+
+  ],
+  "revision" : "journal-launch-v1",
+  "schemaVersion" : 1,
+  "settings" : {
+    "author" : "وِرد",
+    "instagram" : "",
+    "subtitle" : {
+      "ar" : "عن الأفكار التي بدأت صغيرة، والتفاصيل التي صنعت وِرد.",
+      "en" : "The ideas, details, and moments behind Wird."
+    },
+    "title" : {
+      "ar" : "رحلة وِرد",
+      "en" : "The Wird Journal"
+    },
+    "twitter" : ""
+  },
+  "slugOwners" : {
+
+  }
+}

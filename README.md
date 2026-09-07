@@ -9,6 +9,10 @@ no application source code.
 - `/` — Arabic product landing page
 - `/en/` — English product landing page
 - `/id/` — Indonesian product landing page
+- `/journal/` — Arabic Wird Journal
+- `/journal/en/` — English Wird Journal
+- `/j/<name>/` — named Arabic article links
+- `/j/<name>/en/` — named English article links
 - `/privacy/` — Arabic privacy policy
 - `/privacy/en/` — English privacy policy
 - `/support/` — Arabic support
