@@ -48,7 +48,7 @@
       </div>
       <div class="update-chip" aria-label="Last updated">
         <span>Last updated</span>
-        <strong>October 19, 2026</strong>
+        <strong>October 25, 2026</strong>
       </div>
     </section>
 
@@ -67,21 +67,21 @@
           <li><a href="#local-data">1. Data on the device</a></li>
           <li><a href="#icloud">2. iCloud sync</a></li>
           <li><a href="#analytics">3. Usage analytics</a></li>
-          <li><a href="#sada">4. Sada improvement</a></li>
-          <li><a href="#microphone">5. Microphone and speech</a></li>
-          <li><a href="#permissions">6. Location and camera</a></li>
-          <li><a href="#services">7. External services</a></li>
-          <li><a href="#sharing">8. Sharing and reports</a></li>
-          <li><a href="#controls">9. Controls and deletion</a></li>
-          <li><a href="#safety">10. Children and security</a></li>
-          <li><a href="#contact">11. Contact</a></li>
+          <li><a href="#microphone">4. Microphone and speech</a></li>
+          <li><a href="#permissions">5. Location and camera</a></li>
+          <li><a href="#services">6. External services</a></li>
+          <li><a href="#sharing">7. Sharing and contact</a></li>
+          <li><a href="#controls">8. Controls and deletion</a></li>
+          <li><a href="#safety">9. Children and security</a></li>
+          <li><a href="#contact">10. Contact</a></li>
         </ol>
       </aside>
 
       <article class="policy">
+        <div class="notice" id="policy-scope">This policy describes the new version of Wird that includes an optional usage-analytics consent step. Features and settings may differ in older versions, including the version currently available before this update reaches you. <a href="../archive/2026-10-19/en/">Read the previous policy dated October 19, 2026</a>.</div>
         <section id="summary" class="summary-card">
           <h2>Summary</h2>
-          <p>Wird stores most journey data on your device. It does not require an account, display ads, sell your data, or use it for advertising tracking. Usage analytics are enabled by default and can be disabled at any time. You may choose to sync specific data through iCloud. Audio files are outside journey sync; when you use your audio to create a video, an audio copy may be sent to an external service after your explicit permission, as explained below.</p>
+          <p>Wird stores most journey data on your device. It does not require an account, display ads, sell your data, or use it for advertising tracking. Usage analytics stay off until you choose to enable them, and you can turn them off at any time. You may choose to sync specific data through iCloud. Audio files are outside journey sync; when you add an audio or video file or record a recitation to create a video, an audio copy may be sent to an external service after your explicit permission, as explained below.</p>
         </section>
 
         <section id="local-data" class="policy-section">
@@ -93,22 +93,22 @@
             <li>adhkar, prayer, and memorization-practice progress;</li>
             <li>city, prayer-time settings, notifications, and saved mosques;</li>
             <li>Quran recitations and resources you choose to download; and</li>
-            <li>My Recitation Mushaf recordings and enhanced versions created on your device.</li>
+            <li>audio recordings, imported audio, and video projects you create in the video editor.</li>
           </ul>
-          <p>Your original recitation recording remains unchanged. My Recitation Mushaf files are stored in the app’s private area and excluded from journey sync through iCloud and from device backups. Audio files used to create videos are also stored in the app’s area and are outside journey sync. Device backups may include data from this feature according to system settings. With your permission, an audio copy can be sent for external analysis, or to a destination you select when exporting or sharing; these files should therefore not be described as staying only on your device.</p>
+          <p>Audio files used to create videos are stored in the app’s private area and are outside journey sync. Device backups may include data from this feature according to system settings. With your permission, an audio copy can be sent for external analysis, or to a destination you select when exporting or sharing; these files should therefore not be described as staying only on your device.</p>
           <div class="notice">To keep an important recording after deleting the app or losing the device, export a copy to a destination you choose.</div>
         </section>
 
         <section id="icloud" class="policy-section">
           <h2>2. Optional iCloud sync</h2>
           <p>You may request a one-time sync or enable automatic sync. When enabled, Wird uses CloudKit to synchronize journey data in your private Apple iCloud database, including dhikr-session history; Quran reading sessions, positions, bookmarks, and markers; khatmah state, progress, and completions; memorization-recitation results and completed surahs; and saved mosques.</p>
-          <p>Wird does not operate a separate account server, and the developer cannot browse the content of your private iCloud database from the CloudKit dashboard. My Recitation Mushaf audio files are not included in the sync scope.</p>
-          <p>Disabling automatic sync stops later synchronization but does not automatically delete a copy already stored in iCloud. From My Journey Data in Profile, you can review managed data types, export a local JSON copy, or delete the iCloud copy while preserving on-device data and turning automatic sync off. You can also manage the app’s iCloud data in Apple Account settings on your device.</p>
+          <p>Wird does not operate a separate account server, and the developer cannot browse the content of your private iCloud database from the CloudKit dashboard. Audio files and video projects are not included in journey sync.</p>
+          <p>Disabling automatic sync stops later synchronization but does not automatically delete a copy already stored in iCloud. From the iCloud section in the main menu, you can review managed data types, export a local JSON copy, or delete the iCloud copy while preserving on-device data and turning automatic sync off. You can also manage the app’s iCloud data in Apple Account settings on your device.</p>
         </section>
 
         <section id="analytics" class="policy-section">
           <h2>3. Usage analytics controls</h2>
-          <p>Firebase Analytics is enabled by default from the first launch, and Wird does not show a separate analytics-consent prompt. The app may send categorized product-interaction events that help improve the product, such as opening a section or starting or completing a journey. You can disable or re-enable analytics from Profile at any time.</p>
+          <p>Google Firebase Analytics stays off until you agree to usage sharing in the optional onboarding step, or enable it later in About Wird. Your saved explicit choice is preserved. No usage analytics are sent before you consent. The app may send categorized product-interaction events that help improve the product, such as opening a section or starting or completing a journey. You can disable or re-enable analytics from About Wird in the main menu at any time.</p>
           <p>An event category can indicate interaction with a religious feature such as Quran, dhikr, or prayer, so Wird treats this data as sensitive information in App Store disclosures. Firebase may process a random app-instance identifier, app version, device model, operating-system version, interface language, limited diagnostics, and an approximate geographic region inferred from the internet connection. Wird does not use this data for advertising or tracking and does not link it to a Wird user account.</p>
           <p>Wird does not send Analytics:</p>
           <ul>
@@ -119,63 +119,56 @@
             <li>mosque names or addresses; or</li>
             <li>your name, email address, phone number, or advertising identifier.</li>
           </ul>
-          <p>Disabling analytics stops subsequent collection and resets local Analytics data. Events that occur while analytics is disabled are not stored for later transmission, but disabling alone does not delete data previously received by Google. The current service settings retain event data for two months and user data for 14 months. Those limits may not apply to standard aggregated reports, according to how Google Analytics operates.</p>
-        </section>
-
-        <section id="sada" class="policy-section">
-          <h2>4. Optional Sada understanding improvement</h2>
-          <p>Sada understanding improvement is off by default and runs only after you explicitly enable it. When enabled, the app stores only on your device short, redacted text patterns from unsupported attempts, clarification requests, or corrections to improve local understanding.</p>
-          <p>Email addresses, links, identifiers, and numbers are replaced with generic markers. The data contains no audio, account, device identifier, or precise timestamp and is not sent to the developer or an external service. Default retention is 14 days with a maximum of 200 patterns. You can turn the feature off and clear its improvement data in the app.</p>
+          <p>Disabling analytics stops subsequent collection and resets local Analytics data. Events that occur while analytics is disabled are not stored for later transmission, but disabling alone does not delete data previously received by Google. The service settings verified on October 24, 2026 retain event data for two months and user data for 14 months. Reset on new user activity is enabled, so the user identifier’s retention period can restart with continued use. Those limits may not apply to standard aggregated reports, according to how Google Analytics operates.</p>
         </section>
 
         <section id="microphone" class="policy-section">
-          <h2>5. Microphone and speech recognition</h2>
-          <p>Wird requests microphone access only for voice counting, memorization recitation, the voice assistant, or when you deliberately record in My Recitation Mushaf or record audio to create a video.</p>
-          <p>Memorization practice does not create an audio file or save your voice; speech is processed on your device during the session. Voice counting and Sada may use Apple speech-recognition services according to your device’s capabilities, settings, and Apple’s policies. Wird does not send audio or speech transcripts to Firebase Analytics.</p>
-          <h3 id="online-audio">Analyzing your audio to identify verses and create videos</h3>
+          <h2>4. Microphone and speech recognition</h2>
+          <p>Wird requests microphone access for voice dhikr, memorization review and spoken learning, search dictation, or when you deliberately record audio to create a video.</p>
+          <p>Memorization practice does not create an audio file or save your voice; speech is processed on your device during the session. Voice dhikr and search dictation use Apple speech-recognition services according to your device’s capabilities, settings, and Apple’s policies. Wird does not send audio or speech transcripts to Firebase Analytics.</p>
+          <h3 id="online-audio">Analyzing the clip’s audio to identify verses and create videos</h3>
           <p>When you add a recitation audio or video file, or record a recitation to create a video, Wird asks for separate permission before allowing online audio analysis. This is separate from microphone access and is saved for later requests. You can cancel before agreeing; no upload starts and the import or recording flow closes. You can still read the Mushaf and use on-device memorization review.</p>
-          <p>After you agree, an audio copy is sent to QUD, a third-party AI service at https://aligner.qud.dev/api/v1/, hosted on Hugging Face, to match the recitation to verses and time the words. Analysis of imported audio starts as soon as its audio copy is ready, while you choose the excerpt and adjust its sound. External analysis of a microphone recording starts after you stop recording. The copy may include the entire recording before trimming, including other audible speech and sounds. Video images, the original filename, the recording title, and a Wird user identifier are not sent. The verse-matching results are used in a follow-up word-timing request. The service also receives ordinary connection data, such as your IP address.</p>
+          <p>After you agree, an audio copy is sent to QUD, a third-party AI service at https://aligner.qud.dev/api/v1/, hosted on Hugging Face, to match the recitation to verses and time the words. Analysis of imported audio starts as soon as its audio copy is ready, while you choose the excerpt and adjust its sound. External analysis of a microphone recording starts after you stop recording. The copy may include the entire recording before trimming, including other audible speech and sounds. Video images, the original filename, the recording title, and a Wird user identifier are not sent. The verse-matching results are used in a follow-up word-timing request. The service also receives ordinary connection data, such as your IP address. QUD’s documentation describes IP-based processing quotas when no account is used; omitting a Wird user identifier does not make the request anonymous to the provider.</p>
           <p>Trimming and sound enhancement take place on your device. For supported connection or service-availability failures, analysis can fall back to the on-device model. A local retry or manual-text option is available when the app displays it. Declining permission does not start local analysis instead of uploading, and cancellation does not start another external request.</p>
         </section>
 
         <section id="permissions" class="policy-section">
-          <h2>6. Location, camera, TrueDepth, and notifications</h2>
+          <h2>5. Location, camera, and notifications</h2>
           <ul>
             <li>Location is used when you request prayer times, Qibla direction, or nearby mosques. Wird sends the selected location’s coordinates to Apple WeatherKit to retrieve weather. Selecting a city manually uses that city’s coordinates; for current location, coordinate accuracy depends on what iOS allows. Apple Maps services are also used for city and mosque search and resolving a location name. You can select a city manually without allowing access to your device location. Wird does not track your location in the background.</li>
             <li>When scanning a Mushaf page, Wird processes the image on the device to identify its ayahs. Wird does not retain the scan or send it to the developer.</li>
-            <li>The rak‘ah counter may use the camera or TrueDepth to measure distance and movement. Wird does not capture photos or video and does not store or send depth data.</li>
             <li>Notifications provide local reminders you choose and can be disabled in Wird or iOS Settings.</li>
           </ul>
         </section>
 
         <section id="services" class="policy-section">
-          <h2>7. External services</h2>
-          <p>Wird may use Apple system, Maps, speech-recognition, iCloud, and WeatherKit services; Google Firebase Analytics unless you disable it; and Quran audio or resource providers for playback or downloads you request. It also uses QUD at aligner.qud.dev, hosted on Hugging Face, to analyze audio for video creation after the separate permission explained above. Processing by these services is subject to their policies. Ordinary internet connections may expose an IP address and technical information needed to connect. Excluding audio and precise location from Firebase Analytics does not mean they are never processed by services needed for the features you choose.</p>
+          <h2>6. External services</h2>
+          <p>Wird may use Apple system, Maps, speech-recognition, iCloud, and WeatherKit services; Google Firebase Analytics only after you explicitly enable usage sharing; and Quran audio or resource providers for playback or downloads you request. It also uses QUD at aligner.qud.dev, hosted on Hugging Face, to analyze audio for video creation after the separate permission explained above. Processing by these services is subject to their policies. Ordinary internet connections may expose an IP address and technical information needed to connect. Excluding audio and precise location from Firebase Analytics does not mean they are never processed by services needed for the features you choose.</p>
           <p><a href="https://www.apple.com/legal/privacy/" rel="noreferrer">Apple Privacy Policy</a> · <a href="https://policies.google.com/privacy" rel="noreferrer">Google Privacy Policy</a></p>
           <p><a href="https://qud.dev/en/projects/aligner/" rel="noreferrer">QUD — service and documentation</a> · <a href="https://aligner.qud.dev/api/v1/docs" rel="noreferrer">QUD — processing API documentation</a> · <a href="https://huggingface.co/privacy" rel="noreferrer">Hugging Face privacy policy</a></p>
         </section>
 
         <section id="sharing" class="policy-section">
-          <h2>8. Sharing and issue reports</h2>
-          <p>When you choose to share a recording or file, iOS presents available destinations and you select the recipient. Wird does not automatically send issue reports. A report you choose to send may include entered text, an optional screenshot, app version, device model, operating system, language, time zone, and limited screen context useful for diagnosis.</p>
+          <h2>7. Sharing and contact</h2>
+          <p>When you choose to share a recording or file, iOS presents available destinations and you select the recipient. Contact us opens an available email app addressed to our support email. Wird does not automatically attach device details, diagnostic logs, or screenshots to that message. You choose what to write, attach, and send in your email app.</p>
         </section>
 
         <section id="controls" class="policy-section">
-          <h2>9. Controls, deletion, and retention</h2>
-          <p>You can delete recordings, downloads, markers, and histories where the app provides management tools; revoke permissions in iOS Settings; and disable analytics or sync from Profile. My Journey Data also lets you export local journey data and delete its iCloud copy without deleting on-device data.</p>
+          <h2>8. Controls, deletion, and retention</h2>
+          <p>You can delete recordings, downloads, markers, and histories where the app provides management tools; revoke permissions in iOS Settings; and disable analytics from About Wird or sync from the iCloud section in the main menu. The iCloud section also lets you export local journey data and delete its iCloud copy without deleting on-device data.</p>
           <p>Deleting the app removes local data subject to iOS behavior. Some Keychain or iCloud items may remain until you manage them in Apple Account settings. Google’s retention settings govern Analytics data received while analytics is enabled, as described above.</p>
           <p>You may send a privacy or deletion request to the contact address below. Because Wird creates no account and sends Analytics no name, email address, or direct user identifier, it may not be technically possible to identify previously received Analytics data as belonging to a particular person.</p>
           <p>QUD’s documentation says prepared audio remains temporarily available for a few hours for follow-up processing requests. This describes the provider’s processing session; it is not a promise by Wird that every copy or service log is deleted at a fixed time. Provider and hosting retention is governed by their policies. Cancelling stops the app’s requests but cannot retrieve audio already sent. Deleting a recording from your device does not send a deletion request to the provider.</p>
-          <p>You can withdraw permission for future requests in Privacy and use within About Wird by choosing Withdraw online audio permission. This does not withdraw a copy already sent. For questions about processing or deletion by an external service, contact us at the privacy address below. Deleting a local copy is not confirmation of deletion by the service.</p>
+          <p>You can withdraw permission for future requests in About Wird by choosing Withdraw online audio permission. This does not withdraw a copy already sent. For questions about processing or deletion by an external service, contact us at the privacy address below. Deleting a local copy is not confirmation of deletion by the service.</p>
         </section>
 
         <section id="safety" class="policy-section">
-          <h2>10. Children, security, and changes</h2>
+          <h2>9. Children, security, and changes</h2>
           <p>Wird does not target the collection of children’s personal data and contains no ads or advertising trackers. Reasonable safeguards are used, but no electronic storage or transmission method is completely risk-free. This policy may change when features or store requirements change; the revision date will appear at the top.</p>
         </section>
 
         <section id="contact" class="policy-section">
-          <h2>11. Contact</h2>
+          <h2>10. Contact</h2>
           <p>For privacy or support questions, contact:</p>
           <p class="contact-address"><a href="mailto:Aboutmuslimapp@gmail.com">Aboutmuslimapp@gmail.com</a></p>
         </section>
