@@ -48,7 +48,7 @@
       </div>
       <div class="update-chip" aria-label="Last updated">
         <span>Last updated</span>
-        <strong>November 1, 2026</strong>
+        <strong>November 7, 2026</strong>
       </div>
     </section>
 
@@ -78,10 +78,10 @@
       </aside>
 
       <article class="policy">
-        <div class="notice" id="policy-scope">This policy describes Wird 2.0, including recitation-video creation, optional analytics, and optional resource downloads. Earlier versions may have different features and settings. <a href="https://alkwsh.github.io/wird-privacy/privacy/en/">Previously published policy</a> · <a href="https://alkwsh.github.io/wird-privacy/privacy/archive/2026-10-19/en/">Earlier policy archive</a>.</div>
+        <div class="notice" id="policy-scope">This policy covers Wird 2.1, including sharing a Wird link and badges. Available features may differ by version. <a href="https://alkwsh.github.io/wird-privacy/privacy/archive/2026-11-01/en/">Previous policy</a>.</div>
         <section id="summary" class="summary-card">
           <h2>Summary</h2>
-          <p>Wird stores most journey data on your device. It does not require an account, display ads, sell your data, or use it for advertising tracking. Optional Firebase Analytics stays off until you choose to enable it, and you can turn them off at any time. You may choose to sync specific data through iCloud. Audio files are outside journey sync; when you add an audio or video file or record a recitation to create a video, an audio copy may be sent to an external service after your explicit permission, as explained below.</p>
+          <p>Wird stores most journey data on your device. You do not need to create a username or sign in to read. Wird does not display ads, sell your data, or use it for advertising tracking. Using Share Wird automatically creates a random account identity in Firebase Authentication to preserve your link and count, as described below. Optional Firebase Analytics stays off until you choose to enable it, and you can turn them off at any time. You may choose to sync specific data through iCloud. Audio files are outside journey sync; when you add an audio or video file or record a recitation to create a video, an audio copy may be sent to an external service after your explicit permission, as explained below.</p>
         </section>
 
         <section id="local-data" class="policy-section">
@@ -102,15 +102,16 @@
         <section id="icloud" class="policy-section">
           <h2>2. Optional iCloud sync</h2>
           <p>You may request a one-time sync or enable automatic sync. When enabled, Wird uses CloudKit to synchronize journey data in your private Apple iCloud database, including dhikr-session history; Quran reading sessions, positions, bookmarks, and markers; khatmah state, progress, and completions; memorization-recitation results and completed surahs; and saved mosques.</p>
-          <p>Wird does not operate a separate account server, and the developer cannot browse the content of your private iCloud database from the CloudKit dashboard. Audio files and video projects are not included in journey sync.</p>
+          <p>The developer cannot browse the content of your private iCloud database from the CloudKit dashboard. Sharing uses a separate Firebase Authentication identity; it is not your Apple Account and is not linked to that account in the counter server. Audio files and video projects are not included in journey sync.</p>
           <p>Disabling automatic sync stops later synchronization but does not automatically delete a copy already stored in iCloud. From the iCloud section in the main menu, you can review managed data types, export a local JSON copy, or delete the iCloud copy while preserving on-device data and turning automatic sync off. You can also manage the app’s iCloud data in Apple Account settings on your device.</p>
+          <p id="sharing-cloud">When you enable iCloud sync or request a manual sync, your private copy also includes your sharing link, last confirmed count, previously shown badges, sharing identity and recovery credential inside an encrypted CloudKit field. The recovery credential stays in Keychain on the device and is excluded from public JSON exports. Deleting the iCloud copy removes the cloud backup, not the sharing account or its counter-server record.</p>
         </section>
 
         <section id="analytics" class="policy-section">
           <h2>3. Usage analytics controls</h2>
           <p>Google Firebase Analytics stays off until you agree to usage sharing in the optional onboarding step, or enable it later in About Wird. Your saved explicit choice is preserved. No usage analytics are sent before you consent. The app may send categorized product-interaction events that help improve the product, such as opening a section or starting or completing a journey. You can disable or re-enable analytics from About Wird in the main menu at any time.</p>
-          <p>An event category can indicate interaction with a religious feature such as Quran, dhikr, or prayer, so Wird treats this data as sensitive information in App Store disclosures. Firebase may process a random app-instance identifier, app version, device model, operating-system version, interface language, limited diagnostics, and an approximate geographic region inferred from the internet connection. Wird does not use this data for advertising or tracking and does not link it to a Wird user account.</p>
-          <p>Analytics data is linked to Google’s identifier for this installation of the app, even though Wird has no user accounts. It is not anonymous or unlinked data. Wird does not send your name or email address to Analytics and does not use this data for advertising or cross-app tracking.</p>
+          <p>An event category can indicate interaction with a religious feature such as Quran, dhikr, or prayer, so Wird treats this data as sensitive information in App Store disclosures. Firebase may process a random app-instance identifier, app version, device model, operating-system version, interface language, limited diagnostics, and an approximate geographic region inferred from the internet connection. Wird does not use this data for advertising or tracking and does not link it to your sharing-account identity.</p>
+          <p>Analytics data is linked to Google’s identifier for this installation of the app, even though you are not asked to sign in. It is not anonymous or unlinked data. Wird does not send your name or email address to Analytics and does not use this data for advertising or cross-app tracking.</p>
           <p>Wird does not send Analytics:</p>
           <ul>
             <li>audio, recordings, or speech transcripts;</li>
@@ -156,6 +157,11 @@
         <section id="sharing" class="policy-section">
           <h2>7. Sharing and contact</h2>
           <p>When you choose to share a recording or file, iOS presents available destinations and you select the recipient. Contact us opens an available email app addressed to our support email. Wird does not automatically attach device details, diagnostic logs, or screenshots to that message. You choose what to write, attach, and send in your email app.</p>
+                  <p>Requesting your personal link in Share Wird creates or restores a random Firebase Authentication identity in the separate service project. Cloudflare D1 retains the sender ID, link code, short numeric alias, creation time, active status, aggregate Store-opening attempts and latest attempt time. The owner-only dashboard displays these sender records and totals. This counter does not upload your voice, photos, contacts or reading position. The sharing identity, link and count are not sent to Firebase Analytics.</p>
+          <p>The link is stable and may include the app language. Opening it loads the Wird landing page, which automatically attempts to open the App Store and retains a download button as a fallback. The total represents opening attempts, not verified downloads or distinct people, and cannot prove eligibility for monetary rewards. Reopening the page may count again.</p>
+          <p>We do not create a persistent recipient identifier, use measurement cookies or persistent browser storage, or fingerprint a device to recognize returning visitors. A random short-lived ticket exists only in the page memory. The ticket expires within ten minutes, and its receipt prevents double-counting automatic navigation and the fallback button on that page. Stored expired receipts are removed when later attempts are processed. Hosting providers may process normal connection information, such as IP addresses, to operate and protect the service. A transient request-rate limit uses the connection address to prevent abuse; our counter ledger does not retain it or use it to identify visitors or count distinct people.</p>
+          <p>The counter refreshes when a participant enters Share Wird or pulls to refresh, not on every app launch. An earned badge appears after a successful refresh inside that section. Sharing is independent of optional usage Analytics; it does not enable Analytics or override a saved refusal.</p>
+          <p>Wird has no App Clip or pause-count control. Historical measurement-test records remain separate and do not increase the current counter; account deletion includes records associated with that identity in those tests. iCloud recovery does not silently merge different identities.</p>
         </section>
 
         <section id="controls" class="policy-section">
@@ -165,6 +171,8 @@
           <p>You may send a privacy or deletion request to the contact address below. Google uses an app-instance identifier; without that identifier, we may be unable to locate historical Analytics data associated with your installation. Turning analytics off resets local Analytics data but does not itself delete data already received by Google.</p>
           <p>Retention of audio and connection information by QUD and Hugging Face is governed by the provider’s and host’s policies. Wird does not promise a fixed deadline for deletion of every copy or service log, and does not assume that the request is anonymous. Cancelling stops the app’s requests but cannot retrieve audio already sent. Deleting a recording from your device does not send a deletion request to the provider.</p>
           <p>You can withdraw permission for future requests in About Wird by choosing Withdraw online audio permission. This does not withdraw a copy already sent. For questions about processing or deletion by an external service, contact us at the privacy address below. Deleting a local copy is not confirmation of deletion by the service.</p>
+          <p id="sharing-retention">The sharing identity, link and totals are retained to preserve progress; uninstalling alone does not delete them. In About Wird, choose Delete sharing data when a sharing identity exists. After confirmation, we delete the random Firebase account and its link, count and badge records, and remove its recovery data from the associated iCloud backup if present. This is permanent and does not delete your reading position, bookmarks, khatmas or other journey data. Disabling Analytics or deleting the iCloud copy alone does not delete the sharing account.</p>
+          <p id="sharing-deletion-details">If deletion is interrupted, the request remains securely stored on your device and can be resumed from the same control; completion is not reported until the required stages succeed. Access to the same iCloud account may be necessary to clean its backup. The server retains a random deletion-retry receipt; after completion it contains no account ID, and completed receipts older than seven days are removed on later deletion requests. A deleted short-code reservation remains without an account association so an old link cannot be assigned to someone else. iCloud may retain a marker containing no sharing identity or profile data to prevent an old backup from being restored; deleting the iCloud copy also removes that marker. These statements do not cover connection logs retained by service providers under their own policies.</p>
         </section>
 
         <section id="safety" class="policy-section">
