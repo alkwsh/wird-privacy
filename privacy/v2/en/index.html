@@ -48,7 +48,7 @@
       </div>
       <div class="update-chip" aria-label="Last updated">
         <span>Last updated</span>
-        <strong>November 14, 2026</strong>
+        <strong>November 15, 2026</strong>
       </div>
     </section>
 
@@ -115,7 +115,7 @@
           <h2>3. Usage analytics controls</h2>
                     <p>Google Analytics for Firebase helps us understand useful sections, playback and download outcomes, and points of friction, and improve Wird and Listening. In 2.2, usage sharing is enabled by default for new users and people without a saved explicit refusal, including people who previously skipped the optional step. An explicit previous off choice remains off. There is no analytics onboarding step, and skipping or updating is not recorded as explicit consent. You can disable or re-enable sharing in Main Menu → About Wird → Privacy and Usage → Usage Sharing. Turning it off does not limit reading or Listening.</p>
           <p>The Analytics SDK is not initialized in development, simulator, or TestFlight builds. Measurement starts only in a verified public App Store distribution environment, and only if no refusal is saved. Events from periods when measurement is off are not retained for later transmission.</p>
-          <p>An event category can indicate interaction with a religious feature such as Quran, dhikr, or prayer, so Wird treats this data as sensitive information in App Store disclosures. Firebase may process a random app-instance identifier, app version, device model, operating-system version, interface language, limited diagnostics, and an approximate geographic region inferred from the internet connection. Wird does not use this data for advertising or tracking and does not link it to your sharing-account identity.</p>
+          <p>Build 171 of update 2.2 limits custom measurement to app opens and return visits, general navigation, and technical outcomes such as playback, downloads, search and exports. This build does not send worship-session completion indicators, rakah or dhikr counts, khatmah progress, religious reminder types, reading roles, previous-screen trails or custom listening-session duration. This does not alter earlier-version reports already received by Google. Earlier versions may include bucketed reading, khatmah, night-prayer or dhikr completion, duration or quantity indicators, and the category of a Kahf reminder, without verse text or audio.</p>           <p>An event category can indicate interaction with a religious feature such as Quran, dhikr, or prayer, so Wird treats this data as sensitive information in App Store disclosures. Firebase may process a random app-instance identifier, app version, device model, operating-system version, interface language, limited diagnostics, and an approximate geographic region inferred from the internet connection. Wird does not use this data for advertising or tracking and does not link it to your sharing-account identity.</p>
           <p>Analytics data is linked to Google’s identifier for this installation of the app, even though you are not asked to sign in. It is not anonymous or unlinked data. Wird does not send your name or email address to Analytics and does not use this data for advertising or cross-app tracking.</p>
           <p>Wird does not send Analytics:</p>
           <ul>
@@ -126,7 +126,7 @@
             <li>mosque names or addresses; or</li>
             <li>your name, email address, phone number, or advertising identifier.</li>
           </ul>
-          <p>Disabling analytics stops subsequent collection and resets local Analytics data. Events that occur while analytics is disabled are not stored for later transmission, but disabling alone does not delete data previously received by Google. The service settings verified on October 24, 2026 retain event data for two months and user data for 14 months. Reset on new user activity is enabled, so the user identifier’s retention period can restart with continued use. Those limits may not apply to standard aggregated reports, according to how Google Analytics operates.</p>
+          <p>Disabling analytics stops subsequent collection and resets local Analytics data. Events that occur while analytics is disabled are not stored for later transmission, but disabling alone does not delete data previously received by Google. The service settings verified on November 15, 2026 retain event data for two months and user data for 14 months to measure return visits and use across releases and over longer periods, without linking it to a personal account. Reset on new user activity is enabled, so the user identifier’s retention period can restart with continued use. Those limits may not apply to standard aggregated reports, according to how Google Analytics operates.</p>
         </section>
 
         <section id="microphone" class="policy-section">
@@ -183,7 +183,7 @@
 
         <section id="rights" class="policy-section">
           <h2>9. Privacy rights and international processing</h2>
-          <p>Wird is operated by developer Abdulaziz Lafi, who is responsible for the practices described here and can be contacted at the privacy email below. Product analytics aims to improve reliability and the usage and Listening experience, without ads, sale of data, or a religious-belief profile.</p>
+          <p>Wird is operated by developer Abdulrahman Al Azemi (Kuwait), who is responsible for the practices described here and can be contacted at the privacy email below. Product analytics aims to improve reliability and the usage and Listening experience, without ads, sale of data, or a religious-belief profile.</p>
           <p>Depending on applicable law, including laws in the EEA, the UK, some Gulf countries, and US states, you may have rights to access, correct, delete, restrict, obtain a copy of, or object to processing of your personal data, and to withdraw consent where processing relies on it. Conditions and exceptions depend on the law and processing involved. You can turn off usage analytics directly in Privacy and Usage and email us for other requests. We request additional identifying information only when needed to verify and safely fulfil a request. You may also complain to your local data-protection authority.</p>
           <p>Apple, Google, and other providers may process service data outside your country under their infrastructure, policies, and transfer arrangements. We do not guarantee that all data stays in a particular country. Provider processing, accounts, and storage are described above and in the linked provider policies. The purpose of improving the app does not by itself override consent or sensitive-data requirements where the law imposes them.</p>
         </section>
