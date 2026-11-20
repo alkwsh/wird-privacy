@@ -19,9 +19,9 @@
   <link rel="alternate" hreflang="fr" href="https://alkwsh.github.io/wird-privacy/app/fr.html">
   <link rel="alternate" hreflang="sw" href="https://alkwsh.github.io/wird-privacy/app/sw.html">
   <link rel="alternate" hreflang="x-default" href="https://alkwsh.github.io/wird-privacy/app/">
-  <link rel="icon" href="wird-icon.png" type="image/png">
-  <link rel="apple-touch-icon" href="wird-icon.png">
-  <link rel="stylesheet" href="site.css?v=2">
+  <link rel="icon" href="wird-icon.png?v=3" type="image/png">
+  <link rel="apple-touch-icon" href="wird-icon.png?v=3">
+  <link rel="stylesheet" href="site.css?v=3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Wird">
   <meta property="og:title" content="وِرد | المصحف والتلاوات والأذكار">
@@ -39,7 +39,7 @@
   <header class="site-header">
     <div class="shell header-row">
       <a class="brand" href="./">
-        <img src="wird-icon.png" width="48" height="48" alt="">
+        <img src="wird-icon.png?v=3" width="48" height="48" alt="">
         <span>وِرد</span>
       </a>
       <div class="header-actions">
@@ -71,8 +71,8 @@
       <p>المصحف والتلاوات والأذكار ومواقيت الصلاة.</p>
       <a class="store" href="https://apps.apple.com/kw/app/wird-quran-dhikr-prayer/id6804229456" aria-label="تنزيل وِرد من App Store"><img src="app-store-en.svg" alt=""></a>
       <nav class="device-nav" id="devices" aria-label="الأجهزة">
-          <a href="#iphone"><span class="glyph glyph-phone" aria-hidden="true"></span><bdi>iPhone</bdi></a>
-          <a href="#ipad"><span class="glyph glyph-pad" aria-hidden="true"></span><bdi>iPad</bdi></a>
+          <a href="#iphone" aria-label="iPhone"><span class="glyph glyph-phone" aria-hidden="true"></span></a>
+          <a href="#ipad" aria-label="iPad"><span class="glyph glyph-pad" aria-hidden="true"></span></a>
           <a href="#duo"><span class="glyph glyph-duo" aria-hidden="true"></span><bdi>iPhone Duo</bdi></a>
       </nav>
       <div class="hero-devices">
@@ -82,13 +82,13 @@
     </section>
     <section class="chapter iphone" id="iphone">
       <div class="shell split">
-        <div><bdi class="device-label">iPhone</bdi><h2>المصحف والتلاوات</h2><p>يفتح المصحف على آخر صفحة قرأتها. ابحث باسم القارئ أو السورة، ونزّل التلاوة للاستماع من دون إنترنت.</p></div>
+        <div><h2>المصحف والتلاوات</h2><p>يفتح المصحف على آخر صفحة قرأتها. ابحث باسم القارئ أو السورة، ونزّل التلاوة للاستماع من دون إنترنت.</p></div>
         <figure><img src="iphone-night.png?v=2" width="540" height="1104" alt="المصحف في تطبيق وِرد على iPhone" loading="lazy" decoding="async"></figure>
       </div>
     </section>
     <section class="chapter ipad shell" id="ipad">
       <div class="split">
-        <div><bdi class="device-label">iPad</bdi><h2>المصحف على الآيباد</h2><p>يمكنك اختيار المصحف وطريقة عرضه، وفتح التفسير أو ترجمة معاني الآية من الصفحة نفسها.</p></div>
+        <div><h2>المصحف والتفسير</h2><p>يمكنك اختيار المصحف وطريقة عرضه، وفتح التفسير أو ترجمة معاني الآية من الصفحة نفسها.</p></div>
         <figure><img src="ipad-reader.png?v=2" width="860" height="1122" alt="المصحف في تطبيق وِرد على iPad" loading="lazy" decoding="async"></figure>
       </div>
     </section>
@@ -96,15 +96,15 @@
       <div class="shell">
         <bdi class="device-label">iPhone Duo</bdi>
         <h2>المصحف بصفحتين</h2><p>تظهر صفحتان جنبًا إلى جنب على الشاشة الداخلية.</p>
-        <figure><img src="duo-reader.jpg" width="1180" height="948" alt="المصحف في تطبيق وِرد على iPhone Duo" loading="lazy" decoding="async"></figure>
+        <figure><img src="duo-reader.png" width="1180" height="948" alt="المصحف في تطبيق وِرد على iPhone Duo" loading="lazy" decoding="async"></figure>
       </div>
     </section>
     <section class="chapter more" id="features">
       <div class="shell">
         <h2>مزايا التطبيق</h2>
-        <div class="feature-list"><article><h3>الختمة وقيام الليل</h3><p>حدّد موعدًا للختمة وضع فاصلًا عند آخر آية قرأتها. وفي قسم قيام الليل، اختر السور التي تريد قراءتها.</p></article>
-        <article><h3>مراجعة الحفظ</h3><p>سمّع من موضع تحفظه واطلب تلميحًا عند الحاجة.</p></article>
-        <article><h3>الأذكار ومواقيت الصلاة</h3><p>تجد أذكار الصباح والمساء والنوم، وموعد الصلاة القادمة واتجاه القبلة.</p></article></div>
+        <div class="feature-list"><article><svg class="feature-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 7c-2.5-2.2-5.7-2.6-9-1.5v13c3.3-1.1 6.5-.7 9 1.5 2.5-2.2 5.7-2.6 9-1.5v-13c-3.3-1.1-6.5-.7-9 1.5Zm0 0v13"/></svg><h3>الختمة وقيام الليل</h3><p>حدّد موعدًا للختمة وضع فاصلًا عند آخر آية قرأتها. وفي قسم قيام الليل، اختر السور التي تريد قراءتها.</p></article>
+        <article><svg class="feature-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M3 11v2m4-5v8m5-12v16m5-12v8m4-5v2"/></svg><h3>مراجعة الحفظ</h3><p>سمّع من موضع تحفظه واطلب تلميحًا عند الحاجة.</p></article>
+        <article><svg class="feature-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><h3>الأذكار ومواقيت الصلاة</h3><p>تجد أذكار الصباح والمساء والنوم، وموعد الصلاة القادمة واتجاه القبلة.</p></article></div>
       </div>
     </section>
   </main>
