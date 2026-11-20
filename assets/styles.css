@@ -824,6 +824,10 @@ body:has(> main#policy)::before,
   background: var(--paper-strong);
 }
 
+:where(body:has(> main#policy)) .language-links a {
+  color: var(--ink);
+}
+
 :where(body:has(> main#policy)) .language-links a[aria-current="true"],
 :where(body:has(> main#policy)) .skip-link {
   background: var(--policy-action);
