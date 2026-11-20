@@ -752,3 +752,102 @@ img {
     scroll-behavior: auto;
   }
 }
+
+/* Privacy uses Wird's StudioTheme surfaces, type colors, and control states. */
+body:has(> main#policy) {
+  --paper: #e6e6e6;
+  --paper-strong: #fafafa;
+  --surface: #fff;
+  --ink: #262626;
+  --muted: #646464;
+  --line: rgb(38 38 38 / 9%);
+  --policy-action: #262626;
+  --policy-on-action: #fff;
+  --policy-selected: #dcdcdc;
+  --policy-lavender: #7962b2;
+  --policy-tint: #eeeaf9;
+  --pine-950: var(--ink);
+  --pine-900: var(--ink);
+  --pine-800: var(--ink);
+  --pine-700: var(--ink);
+  --pine-600: var(--ink);
+  --mint-300: var(--ink);
+  --mint-100: var(--policy-selected);
+  background: var(--paper);
+}
+
+@media (prefers-color-scheme: dark) {
+  body:has(> main#policy) {
+    --paper: #1a1a1a;
+    --paper-strong: #343434;
+    --surface: #262626;
+    --ink: #dcdcdc;
+    --muted: #999;
+    --line: rgb(220 220 220 / 9%);
+    --policy-action: #d9d9d9;
+    --policy-on-action: #262626;
+    --policy-selected: #343434;
+    --policy-lavender: #bcafdf;
+    --policy-tint: #302b3c;
+  }
+}
+
+body:has(> main#policy)::before,
+:where(body:has(> main#policy)) .summary-card::after {
+  content: none;
+}
+
+:where(body:has(> main#policy)) .site-header,
+:where(body:has(> main#policy)) .site-footer {
+  background: var(--paper);
+  border-color: var(--line);
+}
+
+:where(body:has(> main#policy)) .brand img[src$="/wird-icon-221.png"] {
+  width: 50px;
+  height: auto;
+  aspect-ratio: 1;
+  flex: none;
+  object-fit: contain;
+  /* Match the rendered asset's own corner curve. */
+  border-radius: 12%;
+  box-shadow: none;
+}
+
+@media (max-width: 640px) {
+  :where(body:has(> main#policy)) .brand img[src$="/wird-icon-221.png"] {
+    width: 44px;
+  }
+}
+
+:where(body:has(> main#policy)) .language-links {
+  background: var(--paper-strong);
+}
+
+:where(body:has(> main#policy)) .language-links a[aria-current="true"],
+:where(body:has(> main#policy)) .skip-link {
+  background: var(--policy-action);
+  color: var(--policy-on-action);
+}
+
+:where(body:has(> main#policy)) .update-chip,
+:where(body:has(> main#policy)) .toc,
+:where(body:has(> main#policy)) .summary-card,
+:where(body:has(> main#policy)) .policy-section {
+  background: var(--surface);
+  box-shadow: none;
+}
+
+:where(body:has(> main#policy)) .toc li + li {
+  border-color: var(--line);
+}
+
+:where(body:has(> main#policy)) .notice {
+  border-color: var(--policy-lavender);
+  background: var(--policy-tint);
+  color: var(--ink);
+}
+
+:where(body:has(> main#policy)) :focus-visible {
+  outline-color: var(--policy-lavender);
+}
